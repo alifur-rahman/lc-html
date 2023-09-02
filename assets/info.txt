@@ -1,0 +1,22 @@
+1. Used font-famaly and font-weight 
+    Inter : 400, 500, 600, 700, 
+    Noto Sans: 400, 500, 600,
+    Sen: 400, 
+
+2. GOOGLE FONTS LINK 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans:wght@400;500;600&family=Sen&display=swap" rel="stylesheet">
+
+3. GOOGLE FONTS @import link 
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans:wght@400;500;600&family=Sen&display=swap');
+    </style>
+
+4. GOOGLE FONT FAMALY USES 
+    font-family: 'Inter', sans-serif;
+    font-family: 'Noto Sans', sans-serif;
+    font-family: 'Sen', sans-serif;
+
+5. DOWNLOADED FONTS 
+    Under the project folder there have the downloaded font for backup store. but in html we are going to use the google gonts links. 
