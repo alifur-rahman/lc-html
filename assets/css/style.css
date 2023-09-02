@@ -19,6 +19,7 @@ body {
   font-size: 1.6rem;
   font-family: "Inter", sans-serif;
   font-weight: 400;
+  background: #fff;
 }
 
 h1,
@@ -48,10 +49,249 @@ a {
   max-width: 1280px;
   margin: 0 auto;
 }
+input {
+  color: #667085;
+  font-size: 1.6rem;
+  font-weight: 400;
+  border-radius: 0.8rem;
+  border: 0.1rem solid var(--gray-300, #d0d5dd);
+  background: var(--White, #fff);
+  box-shadow: 0 0.1rem 0.2rem 0 rgba(16, 24, 40, 0.05);
+  padding: 1rem 1.4rem;
+  width: 100%;
+}
+input:focus:focus-visible {
+  /* border: none; */
+  box-shadow: none;
+  outline: none;
+}
+.btn {
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 2rem;
+  padding: 1rem 1.6rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.btn-dark {
+  border-radius: 8px;
+  border: 1px solid #ededed;
+  background: #383838;
+  box-shadow: 0px 0px 0px 4px #ededed, 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+  color: #fff;
+}
+.btn-dark:hover {
+  background: rgba(16, 24, 40, 0.05);
+  color: #383838;
+}
+.btn-over-dark {
+  border-radius: 0.8rem;
+  border: 0.1rem solid #5a5a5a;
+  background: #555;
+  box-shadow: 0 0.1rem 0.2rem 0 rgba(16, 24, 40, 0.05);
+  color: var(--White, #fff);
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 2rem;
+}
+.btn-over-dark:hover {
+  background-color: rgba(16, 24, 40, 0.05);
+}
 /* ------------------------------------------------------------------------------- */
 /* --- HEADER CSS --- */
 /* ------------------------------------------------------------------------------- */
+header {
+  padding: 28px 0px;
+}
+.header_wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+}
+/* style the header search form  */
+.header_search {
+  max-width: 632px;
+  border-radius: 0.8rem;
+  border: 0.1rem solid #d0d5dd;
+  background: #fff;
+  box-shadow: 0 0.1rem 0.2rem 0 rgba(16, 24, 40, 0.05);
+  width: 100%;
+  padding: 5px 9px;
+}
+.header_search form {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+}
+.header_search input {
+  border: none;
+  box-shadow: none;
+  padding: 0.5rem 1.4rem;
+}
+.header_search i {
+  color: rgba(152, 162, 179, 1);
+  font-size: 1.8rem;
+}
+.search_category {
+  position: relative;
+}
+.search_category select {
+  border-radius: 0.8rem;
+  background: #f1f1f1;
+  border: none;
+  padding: 0.8rem 1.6rem;
+  height: 100%;
+  padding-right: 1.1rem;
+  color: #595959;
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 2rem;
+  appearance: none;
+  padding-right: 3rem;
+}
+.search_category::after {
+  content: "\f078";
+  position: absolute;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-42%);
+  font-size: 15px;
+  color: #595959;
+  pointer-events: none;
+}
 
+/* Style the custom dropdown container */
+.custom-dropdown {
+  position: relative;
+  display: inline-block;
+}
+.dropdown-button {
+  background-color: transparent;
+  color: rgba(135, 138, 140, 1);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  font-size: 1.8rem;
+}
+.dropdown-button i {
+  margin-left: 5px;
+}
+.dropdown-list {
+  list-style: none;
+  padding: 0;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  display: none;
+  min-width: 200px;
+  transform: translateY(10px);
+}
+.dropdown-list li {
+  padding: 10px 20px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.dropdown-list li i {
+  margin-right: 10px;
+}
+.custom-dropdown:hover .dropdown-list {
+  display: block;
+}
+
+.header_buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  gap: 15px;
+}
 /* ------------------------------------------------------------------------------- */
 /* --- FOOTER CSS --- */
 /* ------------------------------------------------------------------------------- */
+footer {
+  background: #000;
+  padding: 6.4rem 0 4.8rem 0;
+}
+.footer_top_area {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+}
+.footer_top_left {
+  flex: 0 0 70%;
+}
+.footer_top_right {
+  flex: 0 0 30%;
+}
+.footer_top_left ul {
+  display: flex;
+  justify-content: flex-start;
+  align-content: center;
+  align-items: center;
+  gap: 3.2rem;
+  margin-top: 3.2rem;
+}
+footer ul li a {
+  color: #656565;
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 2.4rem;
+  transition: 0.3s;
+}
+footer ul li a:hover {
+  color: #fff;
+}
+.footer_title {
+  color: var(--White, #fff);
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 2rem;
+  margin-bottom: 1rem;
+}
+.subcribe_form {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.footer_bottom_area {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  margin-top: 7rem;
+}
+.footer_bottom_area ul {
+  display: flex;
+  justify-content: flex-end;
+  align-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.copyright_text {
+  color: #aaa;
+  font-weight: 400;
+  line-height: 24px;
+}
+.auto-fit {
+  height: calc(100vh - 40.8rem);
+}

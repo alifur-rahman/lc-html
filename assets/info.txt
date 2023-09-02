@@ -1,4 +1,4 @@
-1. Used font-famaly and font-weight 
+1. USED FONT-FAMALY & FONT-WEIGHT 
     Inter : 400, 500, 600, 700, 
     Noto Sans: 400, 500, 600,
     Sen: 400, 
@@ -20,3 +20,6 @@
 
 5. DOWNLOADED FONTS 
     Under the project folder there have the downloaded font for backup store. but in html we are going to use the google gonts links. 
+
+6. USED FONT AWOESOME CDN FOR BASIC FONTS 
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
