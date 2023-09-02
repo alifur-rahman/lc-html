@@ -1,6 +1,8 @@
 # lc-html
 Scope of Work - Webapp Design
+
 Current Demo: https://www.longevitycatalyst.org/
+
 1. Project Title:
 Longevity Catalyst: An Open Science Platform
 2. Project Purpose/Background:
