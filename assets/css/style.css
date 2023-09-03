@@ -49,6 +49,7 @@ a {
   max-width: 1280px;
   margin: 0 auto;
 }
+/* st global input css  */
 input {
   color: #667085;
   font-size: 1.6rem;
@@ -65,6 +66,64 @@ input:focus:focus-visible {
   box-shadow: none;
   outline: none;
 }
+input[type="radio"] {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #333;
+  border-radius: 50%;
+  outline: none;
+  cursor: pointer;
+  position: relative;
+  margin-right: 10px;
+}
+
+/* Customize the radio button when checked */
+input[type="radio"]:checked + .radio-control {
+  border-color: #2d2d2d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+input[type="radio"]:checked + .radio-control span {
+  background-color: #2d2d2d;
+  width: 50%;
+  height: 50%;
+  display: block;
+  border-radius: 50px;
+  margin-right: 1.1px;
+}
+
+/* Hide the default radio button */
+input[type="radio"] {
+  display: none;
+}
+
+/* Style the radio label */
+.custom-radio {
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+  font-size: 16px;
+  color: #333;
+  margin: 0;
+}
+
+/* Style the custom radio control */
+.radio-control {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  margin-right: 8px;
+  transition: background-color 0.2s, border-color 0.2s;
+  border: 1px solid #878787;
+  background: #fff;
+}
+/* ED global input css  */
 .btn {
   font-size: 1.4rem;
   font-style: normal;
@@ -98,6 +157,100 @@ input:focus:focus-visible {
 }
 .btn-over-dark:hover {
   background-color: rgba(16, 24, 40, 0.05);
+}
+.btn-full {
+  width: 100%;
+}
+
+/* ------------------------------------------------------------------------------- */
+/* --- Custom Modal CSS --- */
+/* ------------------------------------------------------------------------------- */
+.custom-modal {
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: 100%;
+  top: 0;
+  height: 100%;
+  background: #0606069e;
+  z-index: 99;
+  display: none;
+}
+.modal-wrapper {
+  width: 100%;
+  max-width: 512px;
+  margin: 0 auto;
+  margin-top: 10rem;
+  background: #fff;
+  padding: 20px 16px 16px 16px;
+  position: relative;
+  border-radius: 12px;
+  background: var(--White, #fff);
+  box-shadow: 0px 8px 8px -4px rgba(16, 24, 40, 0.03),
+    0px 20px 24px -4px rgba(16, 24, 40, 0.08);
+  transition: 0.4s;
+  text-align: center;
+}
+.modal_close_button {
+  position: absolute;
+  top: -15px;
+  right: -15px;
+  border-radius: 32px;
+  background: #000;
+  box-shadow: 0px 8px 16px -8px rgba(15, 15, 15, 0.2);
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+  width: 35px;
+  height: 35px;
+  transition: 0.3s;
+}
+.modal_close_button:hover {
+  transform: scale(0.9);
+}
+.modal_title {
+  color: var(--gray-900, #101828);
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 28px;
+  padding: 20px 0;
+}
+.modal_footer {
+  margin-top: 20px;
+}
+.have_account p {
+  color: #989898;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28px;
+}
+.have_account a {
+  color: #a4a4a4;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 28px;
+  transition: 0.3s;
+}
+.have_account a:hover {
+  color: #383838;
+}
+.custom-modal .custom_radio {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 200px;
+  margin: 0 auto;
+  margin-bottom: 2rem;
+}
+.toggle_top {
+  transform: translateY(-300px);
+}
+.modal-show {
+  display: block;
+}
+.modal-show .toggle_top {
+  transform: translateY(0);
 }
 /* ------------------------------------------------------------------------------- */
 /* --- HEADER CSS --- */
