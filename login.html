@@ -76,10 +76,15 @@
         <!-- modal body  -->
         <div class="modal_body">
           <h2 class="modal_title">Choose Your Preferences.</h2>
-          <form action="#" method="post">
+          <form class="sign_up_preference" action="#" method="post">
             <div class="custom_radio">
               <label class="custom-radio">
-                <input type="radio" checked name="radio-option" />
+                <input
+                  type="radio"
+                  value="sign-up-researcher.html"
+                  checked
+                  name="radio-option"
+                />
                 <span class="radio-control">
                   <span></span>
                 </span>
@@ -89,7 +94,11 @@
 
             <div class="custom_radio">
               <label class="custom-radio">
-                <input type="radio" name="radio-option" />
+                <input
+                  type="radio"
+                  value="sign-up-contributor.html"
+                  name="radio-option"
+                />
                 <span class="radio-control">
                   <span></span>
                 </span>
@@ -99,7 +108,11 @@
 
             <div class="custom_radio">
               <label class="custom-radio">
-                <input type="radio" name="radio-option" />
+                <input
+                  type="radio"
+                  value="sign-up-user.html"
+                  name="radio-option"
+                />
                 <span class="radio-control">
                   <span></span>
                 </span>
@@ -156,7 +169,7 @@
             <div class="auth_box">
               <label for="password">Password*</label>
               <input
-                type="text"
+                type="password"
                 name="password"
                 id="password"
                 placeholder="Type Your password"

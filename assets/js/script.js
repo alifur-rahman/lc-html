@@ -1,8 +1,9 @@
 // use static 
 
 
-// JAVASCRIPT FOR CUSTOM MODAL 
+
 document.addEventListener('DOMContentLoaded', function () {
+    // JAVASCRIPT FOR CUSTOM MODAL 
     const modal_attr = document.querySelector('[data-modal-id]');
     if(modal_attr){
         modal_attr.addEventListener('click', function () {
@@ -46,7 +47,30 @@ document.addEventListener('DOMContentLoaded', function () {
             return false;
         });
     }
+   // JAVASCRIPT FOR sign_up_preference form
+   const signUpForm = document.getElementsByClassName('sign_up_preference');
+
+   if (signUpForm.length !== 0) {
+     for (const singleForm of signUpForm) {
+       singleForm.addEventListener('submit', function (e) {
+         e.preventDefault();
+         // Find the selected radio input within the form
+         const selectedRadio = singleForm.querySelector('input[type="radio"]:checked');
    
+         if (selectedRadio) {
+           // Get the value of the selected radio input
+           const selectedValue = selectedRadio.value;
+           window.location.href = selectedValue;
+         }
+       });
+     }
+   }
+   
+ 
 });
+
+
+
+
 
 // JAVASCRIPT FOR CUSTOM SELECT OPTION 
