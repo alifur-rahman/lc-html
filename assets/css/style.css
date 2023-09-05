@@ -686,6 +686,52 @@ header {
 .required_skills .plan-details {
   justify-content: flex-start;
 }
+
+/* short filter css  */
+.project_short_filter {
+  border-radius: 20px;
+  background: #fff;
+  box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 40px;
+}
+.short_filter_button {
+  border-radius: 50px;
+  background: transparent;
+  border: none;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  color: #000;
+  font-family: "Noto Sans", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  gap: 10px;
+  width: 100%;
+  cursor: pointer;
+  transition: 0.3s;
+  height: 55px;
+}
+.short_filter_button svg {
+  fill: #959595;
+}
+.short_filter_button.active,
+.short_filter_button:hover {
+  background: rgba(77, 77, 77, 0.1);
+}
+.short_filter_button.active svg,
+.short_filter_button:hover svg {
+  fill: #000;
+}
 /* ------------------------------------------------------------------------------- */
 /* --- FOOTER CSS --- */
 /* ------------------------------------------------------------------------------- */
