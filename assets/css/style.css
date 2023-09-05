@@ -20,6 +20,7 @@ body {
   font-family: "Inter", sans-serif;
   font-weight: 400;
   background: #fff;
+  color: #646464;
 }
 
 h1,
@@ -56,10 +57,25 @@ h1 {
   font-weight: 700;
   line-height: 72px;
 }
+h3 {
+  font-size: 26.738px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 35.651px;
+}
+h6 {
+  color: #000;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+}
 p {
   color: #646464;
 }
-
+.section_padding {
+  padding: 40px 0;
+}
 /* st global input css  */
 input {
   color: #667085;
@@ -135,6 +151,8 @@ input[type="radio"] {
   background: #fff;
 }
 /* ED global input css  */
+
+/* custom golbal css  */
 .btn {
   font-size: 1.4rem;
   font-style: normal;
@@ -393,9 +411,8 @@ header {
 /* ------------------------------------------------------------------------------- */
 /* --- BANNER CSS --- */
 /* ------------------------------------------------------------------------------- */
-.banner_wrapper {
+.full_width_banner_section {
   padding-top: 100px;
-  padding-bottom: 80px;
 }
 .banner_wrapper {
   text-align: center;
@@ -408,6 +425,55 @@ header {
 .banner_wrapper p {
   padding-top: 20px;
   padding-bottom: 56px;
+}
+/* ------------------------------------------------------------------------------- */
+/* --- TRUST BY CSS --- */
+/* ------------------------------------------------------------------------------- */
+.trust_by_box {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+}
+.single_trust_by img {
+  width: 100%;
+  height: auto;
+}
+.trust_by_wrapper h6 {
+  text-align: center;
+  margin-bottom: 12px;
+}
+/* ------------------------------------------------------------------------------- */
+/* --- Trading Project CSS --- */
+/* ------------------------------------------------------------------------------- */
+.trading_project_wrapper h6 {
+  margin-bottom: 15px;
+}
+.trading_project_box {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.trading_project_single {
+  border-radius: 11.141px;
+  border: 3px solid #edefff;
+  box-shadow: 0px 4.45638px 44.56376px 0px rgba(220, 228, 255, 0.08);
+  padding: 45.738px;
+  background-position: center !important;
+}
+.trading_project_single h3 {
+  color: #fff;
+  margin-bottom: 20px;
+}
+.trading_project_box p {
+  color: #fff;
+  font-family: "Sen", sans-serif;
+  font-size: 17.826px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26.738px;
 }
 /* ------------------------------------------------------------------------------- */
 /* --- FOOTER CSS --- */
