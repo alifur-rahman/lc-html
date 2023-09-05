@@ -93,6 +93,20 @@ input:focus:focus-visible {
   box-shadow: none;
   outline: none;
 }
+
+select,
+option {
+  color: #667085;
+  font-size: 1.6rem;
+  font-weight: 400;
+  border-radius: 0.8rem;
+  border: 0.1rem solid var(--gray-300, #d0d5dd);
+  background: transparent;
+  box-shadow: 0 0.1rem 0.2rem 0 rgba(16, 24, 40, 0.05);
+  padding: 1rem 1.4rem;
+  width: 100%;
+}
+
 input[type="radio"] {
   appearance: none;
   -webkit-appearance: none;
@@ -150,6 +164,105 @@ input[type="radio"] {
   border: 1px solid #878787;
   background: #fff;
 }
+/* check box plan css  */
+.plan {
+  cursor: pointer;
+  width: inherit;
+  min-width: inherit;
+  margin: 5px !important;
+  width: 100%;
+}
+.plan input[type="checkbox"] {
+  width: 100%;
+  padding: 9px 10px;
+  border-radius: 6px;
+  border: 1px solid #cbd5e1;
+  position: absolute;
+  opacity: 0;
+  display: none;
+}
+.plan .plan-content {
+  padding: 1rem 1.4rem;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  border: 0.1rem solid var(--gray-300, #d0d5dd);
+  border-radius: 6px;
+  -webkit-transition: -webkit-box-shadow 0.4s;
+  transition: -webkit-box-shadow 0.4s;
+  -o-transition: box-shadow 0.4s;
+  transition: box-shadow 0.4s;
+  transition: box-shadow 0.4s, -webkit-box-shadow 0.4s;
+  position: relative;
+}
+.plan-details {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  position: relative;
+  transition: ease-in 0.3s;
+}
+.plan-details p {
+  color: #667085;
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+
+.plan input[type="radio"]:checked + .plan-content .plan-details p,
+.plan input[type="checkbox"]:checked + .plan-content .plan-details p {
+  color: #ffff;
+}
+.plan input[type="checkbox"]:checked + .plan-content,
+.plan input[type="radio"]:checked + .plan-content {
+  border: 1px solid #cbd5e1;
+  background: #cbd5e1;
+  -webkit-transition: ease-in 0.3s;
+  -o-transition: ease-in 0.3s;
+  transition: ease-in 0.3s;
+}
+.plan-checked-icon {
+  width: 16px;
+  height: 16px;
+  border-radius: 4px;
+  border: 1px solid #aaa;
+
+  background: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 10px;
+  margin-right: 9px;
+}
+.plan-checked-icon .check_icon {
+  display: none;
+}
+.plan
+  input[type="radio"]:checked
+  + .plan-content
+  .plan-details
+  .plan-checked-icon,
+.plan
+  input[type="checkbox"]:checked
+  + .plan-content
+  .plan-details
+  .plan-checked-icon {
+  border: 1px solid #5c5c5c;
+}
+.plan
+  input[type="radio"]:checked
+  + .plan-content
+  .plan-details
+  .plan-checked-icon
+  .check_icon,
+.plan
+  input[type="checkbox"]:checked
+  + .plan-content
+  .plan-details
+  .plan-checked-icon
+  .check_icon {
+  display: block;
+}
 /* ED global input css  */
 
 /* custom golbal css  */
@@ -200,7 +313,7 @@ input[type="radio"] {
 /* --- Custom Modal CSS --- */
 /* ------------------------------------------------------------------------------- */
 .custom-modal {
-  position: absolute;
+  position: fixed;
   left: 0;
   right: 0;
   width: 100%;
@@ -341,6 +454,7 @@ header {
   line-height: 2rem;
   appearance: none;
   padding-right: 3rem;
+  width: unset;
 }
 .search_category::after {
   content: "\f078";
@@ -474,6 +588,335 @@ header {
   font-style: normal;
   font-weight: 400;
   line-height: 26.738px;
+}
+
+/* ------------------------------------------------------------------------------- */
+/* --- Project show section  CSS --- */
+/* ------------------------------------------------------------------------------- */
+.project_show_wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  /* align-items: center; */
+}
+.project_side_ber_container {
+  flex: 0 0 33.33%;
+  padding: 20px;
+}
+.project_show_container {
+  flex: 0 0 66.66%;
+  padding: 20px;
+}
+.project_side_bar {
+  border-radius: 20px;
+  background: #fff;
+  box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.1);
+  padding: 50px 31px;
+}
+/* side bar filte css  */
+.project_side_bar label {
+  color: #333;
+  font-family: "Noto Sans", sans-serif;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.65px;
+  margin-bottom: 9px;
+  display: inline-block;
+}
+.project_side_bar select,
+.project_side_bar input {
+  border-radius: 12px;
+  background: #f7f7f7;
+  border: none;
+  padding: 14px 17px;
+  height: 50px;
+  color: #333;
+  font-family: "Noto Sans", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.project_side_bar input::placeholder,
+.project_side_bar select {
+  color: #aaa;
+}
+
+.input_box:not(:last-child) {
+  margin-bottom: 30px;
+}
+.project_side_bar .plan .plan-content {
+  border-radius: 12px;
+  background: #f7f7f7;
+  border: none;
+  padding: 16px 17px;
+}
+.project_side_bar .plan-details p {
+  color: #aaa;
+  font-family: "Noto Sans", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.project_side_bar .plan input[type="checkbox"]:checked + .plan-content,
+.project_side_bar .plan input[type="radio"]:checked + .plan-content {
+  transition: ease-in 0.3s;
+  border: none;
+  background: rgba(16, 24, 40, 0.05);
+}
+.project_side_bar
+  .plan
+  input[type="radio"]:checked
+  + .plan-content
+  .plan-details
+  p,
+.project_side_bar
+  .plan
+  input[type="checkbox"]:checked
+  + .plan-content
+  .plan-details
+  p {
+  color: #333;
+}
+
+.required_skills .plan-details {
+  justify-content: flex-start;
+}
+
+/* short filter css  */
+.project_short_filter {
+  border-radius: 20px;
+  background: #fff;
+  box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 40px;
+}
+.short_filter_button {
+  border-radius: 50px;
+  background: transparent;
+  border: none;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  color: #000;
+  font-family: "Noto Sans", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  gap: 10px;
+  width: 100%;
+  cursor: pointer;
+  transition: 0.3s;
+  height: 55px;
+}
+.short_filter_button svg {
+  fill: #959595;
+}
+.short_filter_button.active,
+.short_filter_button:hover {
+  background: rgba(77, 77, 77, 0.1);
+}
+.short_filter_button.active svg,
+.short_filter_button:hover svg {
+  fill: #000;
+}
+/* ------------------------------------------------------------------------------- */
+/* --- PROJECT SHOW CSS --- */
+/* ------------------------------------------------------------------------------- */
+.card {
+  border-radius: 20px;
+  background: #fff;
+  box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.1);
+  padding: 30px 20px;
+}
+.card:not(:last-child) {
+  margin-bottom: 40px;
+}
+.card_header {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.post_auth_info {
+  display: flex;
+  justify-content: flex-start;
+  align-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.profile_image img {
+  width: 45px;
+  height: 45px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.post_user_fet a {
+  color: #333;
+  font-family: "Noto Sans", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.post_user_fet a:hover {
+  text-decoration: underline;
+}
+.post-features {
+  color: #777;
+  font-family: "Noto Sans", sans-serif;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  display: flex;
+  justify-content: flex-start;
+  align-content: center;
+  align-items: center;
+  gap: 5px;
+}
+.post-features span {
+  width: 4px;
+  height: 4px;
+  background: #ccc;
+  display: inline-block;
+  border-radius: 50px;
+}
+.post_arrow button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.post_arrow button svg {
+  fill: #777777;
+}
+.post_arrow button:hover svg {
+  fill: #333;
+}
+.card_title {
+  color: #000;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 32px;
+}
+.card_text {
+  color: #667085;
+  padding: 20px 0;
+}
+.card_body a {
+  color: #333;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px;
+  display: flex;
+  justify-content: flex-start;
+  align-content: center;
+  align-items: center;
+  gap: 6px;
+  transition: 0.3s;
+}
+.card_body a:hover {
+  color: #555;
+}
+.project_resourse {
+  border-radius: 10px;
+  border: 1px solid #eee;
+  background: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+  padding: 15px;
+  margin: 20px 0;
+}
+.project_reso_details {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.likded_users {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  margin-top: 5px;
+}
+.likded_users a:not(:first-child) {
+  margin-left: -10px;
+}
+.likded_users img {
+  width: 25px;
+  height: 25px;
+  border-radius: 50px;
+  object-fit: cover;
+  border: 2px solid #ffff;
+}
+.project_reso_details p {
+  color: #777;
+  font-family: "Noto Sans", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.project_effective_button {
+  color: #232323;
+  font-family: Noto Sans;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  border: none;
+  background: transparent;
+  gap: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+  transition: 0.3s;
+  border-radius: 50px;
+}
+.project_effective_button:hover {
+  background: rgba(77, 77, 77, 0.1);
+}
+.project_comment_features {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+}
+.post-features a {
+  color: #aaa;
+  font-family: "Noto Sans", sans-serif;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  transition: 0.3s;
+}
+.post-features a:hover {
+  text-decoration: underline;
+  color: #000;
 }
 /* ------------------------------------------------------------------------------- */
 /* --- FOOTER CSS --- */
