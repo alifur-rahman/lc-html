@@ -1,4 +1,7 @@
 // use static 
+
+
+// JAVASCRIPT FOR CUSTOM MODAL 
 document.addEventListener('DOMContentLoaded', function () {
     const modal_attr = document.querySelector('[data-modal-id]');
     if(modal_attr){
@@ -41,3 +44,4 @@ document.addEventListener('DOMContentLoaded', function () {
    
 });
 
+// JAVASCRIPT FOR CUSTOM SELECT OPTION 
