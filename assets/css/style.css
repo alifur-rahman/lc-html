@@ -49,6 +49,17 @@ a {
   max-width: 1280px;
   margin: 0 auto;
 }
+h1 {
+  color: #000;
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 72px;
+}
+p {
+  color: #646464;
+}
+
 /* st global input css  */
 input {
   color: #667085;
@@ -133,6 +144,7 @@ input[type="radio"] {
   cursor: pointer;
   transition: 0.3s;
 }
+
 .btn-dark {
   border-radius: 8px;
   border: 1px solid #ededed;
@@ -162,6 +174,10 @@ input[type="radio"] {
   width: 100%;
 }
 
+.btn-lg {
+  padding: 16px 28px;
+  font-size: 18px;
+}
 /* ------------------------------------------------------------------------------- */
 /* --- Custom Modal CSS --- */
 /* ------------------------------------------------------------------------------- */
@@ -373,6 +389,25 @@ header {
   align-items: center;
   align-content: center;
   gap: 15px;
+}
+/* ------------------------------------------------------------------------------- */
+/* --- BANNER CSS --- */
+/* ------------------------------------------------------------------------------- */
+.banner_wrapper {
+  padding-top: 100px;
+  padding-bottom: 80px;
+}
+.banner_wrapper {
+  text-align: center;
+}
+.banner_wrapper h1 {
+  width: 100%;
+  max-width: 941px;
+  margin: 0 auto;
+}
+.banner_wrapper p {
+  padding-top: 20px;
+  padding-bottom: 56px;
 }
 /* ------------------------------------------------------------------------------- */
 /* --- FOOTER CSS --- */
