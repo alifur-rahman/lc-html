@@ -52,78 +52,102 @@
           <!-- header buttons & links area  -->
           <div class="header_buttons">
             <a href="login.html" class="btn btn-dark">Login</a>
-            <div class="custom-dropdown">
-              <button class="dropdown-button" data-modal-id="signup_references">
-                <i class="fas fa-user-alt"></i>
-                <i class="fas fa-chevron-down"></i>
-              </button>
-            </div>
           </div>
           <!-- --  -->
         </div>
       </div>
     </header>
-    <!-- Choose Your Preferences modal  -->
-    <div class="custom-modal" id="signup_references">
-      <div class="modal-wrapper toggle_top">
-        <!-- modal head  -->
-        <div class="modal_head">
-          <img src="assets/img/logo.png" alt="logo" />
-          <button class="modal_close_button">
-            <i class="fas fa-times"></i>
-          </button>
-        </div>
-        <!-- modal body  -->
-        <div class="modal_body">
-          <h2 class="modal_title">Choose Your Preferences.</h2>
-          <form action="#" method="post">
-            <div class="custom_radio">
-              <label class="custom-radio">
-                <input type="radio" checked name="radio-option" />
-                <span class="radio-control">
-                  <span></span>
-                </span>
-                Researcher sign- up
-              </label>
-            </div>
-
-            <div class="custom_radio">
-              <label class="custom-radio">
-                <input type="radio" name="radio-option" />
-                <span class="radio-control">
-                  <span></span>
-                </span>
-                Contributor sign- up
-              </label>
-            </div>
-
-            <div class="custom_radio">
-              <label class="custom-radio">
-                <input type="radio" name="radio-option" />
-                <span class="radio-control">
-                  <span></span>
-                </span>
-                User sign- up
-              </label>
-            </div>
-            <button type="submit" class="btn btn-dark btn-full">
-              Create Account
-            </button>
-          </form>
-        </div>
-        <!-- modal footer  -->
-        <div class="modal_footer">
-          <div class="have_account">
-            <p>Already have an account? <a href="login.html">Log in</a></p>
-          </div>
-        </div>
-        <!-- --  -->
-      </div>
-    </div>
 
     <!-- ED:- Header section  -->
 
-    <section class="auto-fit"></section>
+    <!-- ST:- Auth header menu  -->
+    <section class="full_with_other_menu">
+      <div class="container">
+        <div class="others_menu">
+          <ul>
+            <li>
+              <a href="index.html"> <i class="fas fa-home"></i> Home</a>
+            </li>
+            <li>
+              <a href="about.html"> <i class="fas fa-info-circle"></i> About</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <!-- ED:- Auth header menu  -->
+    <!-- ST:- sign up form  -->
+    <section class="full_widht_auth_section">
+      <div class="container">
+        <div class="auth_area">
+          <form action="#" method="post">
+            <h4>Sign Up</h4>
+            <p>Welcome back! Please enter your details.</p>
+            <div class="auth_box padding_top-30">
+              <label for="name">Full Name</label>
+              <input
+                type="text"
+                name="name"
+                id="name"
+                placeholder="Full Name"
+              />
+            </div>
+            <div class="auth_box">
+              <label for="Email">Email</label>
+              <input type="email" name="Email" id="Email" placeholder="Email" />
+            </div>
+            <div class="auth_box">
+              <label for="password">Password</label>
+              <input
+                type="password"
+                name="password"
+                id="password"
+                placeholder="Type Your password"
+              />
+            </div>
+            <div class="auth_box">
+              <label for="compay">Company / Institution</label>
+              <input
+                type="text"
+                name="compay"
+                id="compay"
+                placeholder="Company"
+              />
+            </div>
+            <div class="auth_box">
+              <label for="bio">Bio</label>
+              <textarea
+                name="bio"
+                id="bio"
+                rows="6"
+                placeholder="I'm a Product Designer based in Dhaka, Bangladesh. I specialize in UX/UI design, brand strategy, and Webflow development.
+                "
+              ></textarea>
+              <p>275 characters left</p>
+            </div>
+
+            <div class="auth_box">
+              <label for="propic">Profile Picture</label>
+              <label for="img_up" class="drag_imge_input">
+                <input type="file" id="img_up" />
+                <img src="assets/img/Featured-icon.svg" alt="" />
+                <p><span>Click to upload</span> or drag and drop</p>
+                <p>SVG, PNG, JPG or GIF (max. 800x400px)</p>
+              </label>
+            </div>
+
+            <button type="submit" class="auth_submit btn btn-dark btn-full">
+              Sign Up
+            </button>
+            <p class="have_auth_msg">
+              Already have an account?
+              <a href="login.html">Log In.</a>
+            </p>
+          </form>
+        </div>
+      </div>
+    </section>
+    <!-- ED:- sign up form  -->
 
     <!-- ST:- Footer section  -->
     <footer>
