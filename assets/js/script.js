@@ -8,10 +8,12 @@ document.addEventListener('DOMContentLoaded', function () {
         modal_attr.addEventListener('click', function () {
             const modalId = this.getAttribute('data-modal-id');
             const modal = document.getElementById(modalId);
+
             
             // Check if the modal exists
             if (modal) {
                 modal.classList.add('modal-show');
+                document.body.classList.add('modal-open');
                 
                 // Close button inside the modal
                 const closeButton = modal.querySelector('.modal_close_button');
@@ -19,6 +21,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 if (closeButton) {
                     closeButton.addEventListener('click', function () {
                         modal.classList.remove('modal-show');
+                        document.body.classList.remove('modal-open');
                     });
                 }
     
@@ -35,6 +38,7 @@ document.addEventListener('DOMContentLoaded', function () {
                     }
                     if(isRemove){
                         modal.classList.remove('modal-show');
+                        document.body.classList.remove('modal-open');
                     }
                    
                 });
