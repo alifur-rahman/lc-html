@@ -1,130 +1,17 @@
-/*=============Alif=====================*/
-
-/* AL About us area CSS  */
 @media all and (max-width: 1200px) {
-  .box2,
-  .box5 {
-    left: 317px;
-  }
+  /* --  */
 }
 @media all and (max-width: 991px) {
-  .box2 {
-    left: 0;
-    top: 331px;
-  }
-  .box5 {
-    left: auto;
-    right: 0;
-    top: 331px;
-  }
-  .main-canvas {
-    height: 975px;
-  }
-  /* menu item image css  */
-  .menu_item_img {
-    width: 20px;
-    height: 20px;
-  }
-  /* deshboad css  */
-  .sg-form-area {
-    margin-top: 29px !important;
-  }
-  .AL_myPost_area {
-    margin-top: 25px;
-  }
-  .ar-about-card {
-    margin-top: 25px;
-  }
+  /* --  */
 }
 
 @media all and (max-width: 767px) {
-  .box3 {
-    top: 662px;
-  }
-
-  .box4 {
-    top: auto;
-    bottom: 662px;
-  }
-  .box5 {
-    top: auto;
-    bottom: 331px;
-    left: 0;
-  }
-  .box6 {
-    bottom: 0px;
-  }
-  .main-canvas {
-    height: 1969px;
-  }
-  .sk-about-info {
-    padding-top: 30px;
-  }
+  /* --  */
 }
 /* user porfile css Alif */
 @media all and (max-width: 576px) {
-  .sg-dashboard-img {
-    width: 130px;
-    height: 130px;
-  }
-  .sg-dashboard-profile {
-    bottom: 30%;
-    left: 50%;
-    -webkit-transform: translateX(-50%);
-    transform: translateX(-50%);
-  }
-  .sg-dashboard-title {
-    bottom: 17%;
-    right: 50%;
-    -webkit-transform: translateX(50%);
-    transform: translateX(50%);
-  }
-  .sg-dashboard-title h3 {
-    font-size: 22px;
-  }
-  .AL_upload_file .fas.fa-edit {
-    font-size: 8px;
-    top: 50%;
-    right: 3%;
-  }
-  .AL_upload_file:hover .fas.fa-edit {
-    top: 60%;
-    right: 43%;
-  }
-  .AL_upload_file .submit {
-    bottom: -0%;
-    font-size: 10px;
-  }
-  .sk-about-info h2 {
-    font-size: 2.5rem;
-  }
-
-  /* php error massage  */
-  #phpAlert {
-    padding: 10px 5px;
-    font-size: 11px;
-  }
+  /* --  */
 }
 @media all and (max-width: 366px) {
-  .main-canvas {
-    height: 2113px;
-  }
-  .card-text {
-    padding: 0;
-  }
-  .box2 {
-    top: 360px;
-  }
-  .box3 {
-    top: 720px;
-  }
-  .box4 {
-    top: auto;
-    bottom: 720px;
-  }
-  .box5 {
-    top: auto;
-    bottom: 360px;
-    left: 0;
-  }
+  /* --  */
 }
