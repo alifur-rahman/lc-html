@@ -104,15 +104,17 @@
                 placeholder="Type Your password"
               />
             </div>
+
             <div class="auth_box">
-              <label for="compay">Company / Institution</label>
-              <input
-                type="text"
-                name="compay"
-                id="compay"
-                placeholder="Company"
-              />
+              <label for="propic">Profile Picture</label>
+              <label for="img_up" class="drag_imge_input">
+                <input type="file" id="img_up" />
+                <img src="assets/img/Featured-icon.svg" alt="" />
+                <p><span>Click to upload</span> or drag and drop</p>
+                <p>SVG, PNG, JPG or GIF (max. 800x400px)</p>
+              </label>
             </div>
+
             <div class="auth_box">
               <label for="bio">Bio</label>
               <textarea
@@ -126,13 +128,13 @@
             </div>
 
             <div class="auth_box">
-              <label for="propic">Profile Picture</label>
-              <label for="img_up" class="drag_imge_input">
-                <input type="file" id="img_up" />
-                <img src="assets/img/Featured-icon.svg" alt="" />
-                <p><span>Click to upload</span> or drag and drop</p>
-                <p>SVG, PNG, JPG or GIF (max. 800x400px)</p>
-              </label>
+              <label for="compay">Affiliation / Company / Institution</label>
+              <input
+                type="text"
+                name="compay"
+                id="compay"
+                placeholder="Company"
+              />
             </div>
 
             <button type="submit" class="auth_submit btn btn-dark btn-full">
