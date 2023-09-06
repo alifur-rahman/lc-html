@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LC - Html Design || About us</title>
+    <link rel="icon" type="image/x-icon" href="assets/img/fav.ico" />
+    <!-- Google Fonts  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans:wght@400;500;600&family=Sen&display=swap"
+      rel="stylesheet"
+    />
+    <!-- fontawesome cdn  -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <!-- --  -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/responsive.css" />
+  </head>
+  <body>
+    <!-- ST:- Header section  -->
+    <header>
+      <div class="container">
+        <div class="header_wrapper">
+          <!-- logo area  -->
+          <div class="logo">
+            <a href="index.html"
+              ><img src="assets/img/logo.png" alt="logo"
+            /></a>
+          </div>
+          <!-- header search area  -->
+          <div class="header_search">
+            <form action="#" method="post">
+              <i class="fas fa-search"></i>
+              <input
+                type="text"
+                name="search-text"
+                placeholder="Project titles"
+              />
+
+              <div class="search_category custom-select">
+                <select name="se_category" id="">
+                  <option value="Explore">Explore</option>
+                  <option value="Explore">Explore 2</option>
+                  <option value="Explore">Explore 3</option>
+                </select>
+              </div>
+            </form>
+          </div>
+          <!-- header buttons & links area  -->
+          <div class="header_buttons">
+            <a href="login.html" class="btn btn-dark">Login</a>
+            <div class="custom-dropdown">
+              <button class="dropdown-button" data-modal-id="signup_references">
+                <i class="fas fa-user-alt"></i>
+                <i class="fas fa-chevron-down"></i>
+              </button>
+            </div>
+          </div>
+          <!-- --  -->
+        </div>
+      </div>
+    </header>
+    <!-- Choose Your Preferences modal  -->
+    <div class="custom-modal" id="signup_references">
+      <div class="modal-wrapper toggle_top">
+        <!-- modal head  -->
+        <div class="modal_head">
+          <img src="assets/img/logo.png" alt="logo" />
+          <button class="modal_close_button">
+            <i class="fas fa-times"></i>
+          </button>
+        </div>
+        <!-- modal body  -->
+        <div class="modal_body">
+          <h2 class="modal_title">Choose Your Preferences.</h2>
+          <form class="sign_up_preference" action="#" method="post">
+            <div class="custom_radio">
+              <label class="custom-radio">
+                <input
+                  type="radio"
+                  value="sign-up-researcher.html"
+                  checked
+                  name="radio-option"
+                />
+                <span class="radio-control">
+                  <span></span>
+                </span>
+                Researcher sign- up
+              </label>
+            </div>
+
+            <div class="custom_radio">
+              <label class="custom-radio">
+                <input
+                  type="radio"
+                  value="sign-up-contributor.html"
+                  name="radio-option"
+                />
+                <span class="radio-control">
+                  <span></span>
+                </span>
+                Contributor sign- up
+              </label>
+            </div>
+
+            <div class="custom_radio">
+              <label class="custom-radio">
+                <input
+                  type="radio"
+                  value="sign-up-user.html"
+                  name="radio-option"
+                />
+                <span class="radio-control">
+                  <span></span>
+                </span>
+                User sign- up
+              </label>
+            </div>
+            <button type="submit" class="btn btn-dark btn-full">
+              Create Account
+            </button>
+          </form>
+        </div>
+        <!-- modal footer  -->
+        <div class="modal_footer">
+          <div class="have_account">
+            <p>Already have an account? <a href="login.html">Log in</a></p>
+          </div>
+        </div>
+        <!-- --  -->
+      </div>
+    </div>
+    <!-- ED:- Header section  -->
+
+    <!-- ST:- About Banner section  -->
+    <section class="full_width_about_banner_section section_padding">
+      <div class="container">
+        <div class="about_banner_wrapper">
+          <!-- about banner  -->
+          <div class="about_banner_img">
+            <img src="assets/img/about-banner.png" alt="About Banner" />
+          </div>
+          <!-- about banner content  -->
+          <div class="about_banner_content">
+            <h2>About Us</h2>
+            <p>
+              The Longevity Biotech Fellowship is a non-profit community for
+              people to come together to build, join, or invest in revolutionary
+              longevity biotechnology projects.
+            </p>
+            <p>
+              We operate as an IRS-approved 501(c)3 non-profit-- registered
+              under LessDeath Inc -- based in Santa Clara, California.
+            </p>
+            <a href="#" class="btn btn-dark">Get In Touch</a>
+          </div>
+          <!-- --  -->
+        </div>
+      </div>
+    </section>
+    <!-- ED:- About Banner section  -->
+
+    <!-- ST:- Why choice us section  -->
+    <section class="full_width_why_choice_section section_padding">
+      <div class="container">
+        <div class="why_choice_wrapper">
+          <!-- section header  -->
+          <div class="section_header">
+            <h2>Why Choose Us</h2>
+            <p>
+              On Ed-Circle, instructors from all over the world instruct
+              millions of students. We offer the knowledge and abilities.
+            </p>
+          </div>
+          <!-- choice us boxes  -->
+          <div class="why_choice_us_boxes">
+            <!-- single box  -->
+            <div class="signle_choice_us">
+              <div class="choice_icon">
+                <img src="assets/img/icons/users.svg" alt="icon" />
+              </div>
+              <h5>Longevity Catalyst</h5>
+              <p>
+                Understand what matters to our employees. Give them what they
+                need to do their best work.
+              </p>
+            </div>
+            <!-- single box  -->
+            <div class="signle_choice_us">
+              <div class="choice_icon">
+                <img src="assets/img/icons/users.svg" alt="icon" />
+              </div>
+              <h5>Longevity Catalyst</h5>
+              <p>
+                Understand what matters to our employees. Give them what they
+                need to do their best work.
+              </p>
+            </div>
+            <!-- single box  -->
+            <div class="signle_choice_us">
+              <div class="choice_icon">
+                <img src="assets/img/icons/users.svg" alt="icon" />
+              </div>
+              <h5>Longevity Catalyst</h5>
+              <p>
+                Understand what matters to our employees. Give them what they
+                need to do their best work.
+              </p>
+            </div>
+            <!-- single box  -->
+            <div class="signle_choice_us">
+              <div class="choice_icon">
+                <img src="assets/img/icons/users.svg" alt="icon" />
+              </div>
+              <h5>Longevity Catalyst</h5>
+              <p>
+                Understand what matters to our employees. Give them what they
+                need to do their best work.
+              </p>
+            </div>
+            <!-- single box  -->
+            <div class="signle_choice_us">
+              <div class="choice_icon">
+                <img src="assets/img/icons/users.svg" alt="icon" />
+              </div>
+              <h5>Longevity Catalyst</h5>
+              <p>
+                Understand what matters to our employees. Give them what they
+                need to do their best work.
+              </p>
+            </div>
+            <!-- single box  -->
+            <div class="signle_choice_us">
+              <div class="choice_icon">
+                <img src="assets/img/icons/users.svg" alt="icon" />
+              </div>
+              <h5>Longevity Catalyst</h5>
+              <p>
+                Understand what matters to our employees. Give them what they
+                need to do their best work.
+              </p>
+            </div>
+            <!-- --  -->
+          </div>
+          <!-- --  -->
+        </div>
+      </div>
+    </section>
+    <!-- ED:- Why choice us section  -->
+
+    <!-- ST:- Team member section  -->
+    <section class="full_width_team_member_section section_padding">
+      <div class="container">
+        <div class="team_member_wrapper">
+          <!-- section header  -->
+          <div class="section_header">
+            <h2>Meet the team Member</h2>
+            <p>
+              On Ed-Circle, instructors from all over the world instruct
+              millions of students. We offer the knowledge and abilities.
+            </p>
+          </div>
+          <div class="team_member_box">
+            <!-- single team member  -->
+            <div class="single_team_member">
+              <div class="team_member_img">
+                <img
+                  src="assets/img/team/team-member-1.jpeg"
+                  alt="team member"
+                />
+              </div>
+              <h6 class="team_member_title">Mark Hamalainen</h6>
+              <span class="team_member_designation">Co-Executive Director</span>
+              <p>
+                Mark’s career has progressed from manual bench work in academia
+              </p>
+              <div class="team_socail_contact">
+                <a href="#"
+                  ><img src="assets/img/icons/twitter.svg" alt="twitter"
+                /></a>
+                <a href="#"
+                  ><img src="assets/img/icons/linkedin.svg " alt="linkedin"
+                /></a>
+              </div>
+            </div>
+            <!-- single team member  -->
+            <div class="single_team_member">
+              <div class="team_member_img">
+                <img
+                  src="assets/img/team/team-member-1.jpeg"
+                  alt="team member"
+                />
+              </div>
+              <h6 class="team_member_title">Mark Hamalainen</h6>
+              <span class="team_member_designation">Co-Executive Director</span>
+              <p>
+                Mark’s career has progressed from manual bench work in academia
+              </p>
+              <div class="team_socail_contact">
+                <a href="#"
+                  ><img src="assets/img/icons/twitter.svg" alt="twitter"
+                /></a>
+                <a href="#"
+                  ><img src="assets/img/icons/linkedin.svg " alt="linkedin"
+                /></a>
+              </div>
+            </div>
+            <!-- single team member  -->
+            <div class="single_team_member">
+              <div class="team_member_img">
+                <img
+                  src="assets/img/team/team-member-1.jpeg"
+                  alt="team member"
+                />
+              </div>
+              <h6 class="team_member_title">Mark Hamalainen</h6>
+              <span class="team_member_designation">Co-Executive Director</span>
+              <p>
+                Mark’s career has progressed from manual bench work in academia
+              </p>
+              <div class="team_socail_contact">
+                <a href="#"
+                  ><img src="assets/img/icons/twitter.svg" alt="twitter"
+                /></a>
+                <a href="#"
+                  ><img src="assets/img/icons/linkedin.svg " alt="linkedin"
+                /></a>
+              </div>
+            </div>
+            <!-- --  -->
+          </div>
+          <!-- --  -->
+        </div>
+      </div>
+    </section>
+    <!-- ED:- Team member section  -->
+
+    <!-- ST:- Newsletter section  -->
+    <section class="full_width_newsletter_section">
+      <div class="container">
+        <div class="newsletter_wrapper">
+          <!-- section header  -->
+          <div class="section_header">
+            <h2>Sign up for our newsletter</h2>
+            <p>
+              Be the first to know about releases and industry news and
+              insights.
+            </p>
+          </div>
+          <!-- newsletter form  -->
+          <div class="newsletter_form_area">
+            <form action="#" method="post">
+              <div class="news_letter_input">
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder="Enter your email"
+                />
+                <button type="submit" class="btn btn-dark no-shadow">
+                  Subscribe
+                </button>
+              </div>
+            </form>
+          </div>
+          <!-- --  -->
+        </div>
+      </div>
+    </section>
+    <!-- ED:- Newsletter section  -->
+
+    <!-- ST:- Footer section  -->
+    <footer>
+      <div class="container">
+        <div class="footer_wrapper">
+          <!-- footer top area  -->
+          <div class="footer_top_area">
+            <!-- top left  -->
+            <div class="footer_top_left">
+              <!-- logo  -->
+              <a href="index.html">
+                <img src="assets/img/logo-dark.png" alt="dark logo"
+              /></a>
+              <!-- footer menus  -->
+              <ul>
+                <li><a href="#">Overview</a></li>
+                <li><a href="#">Features</a></li>
+                <li><a href="#">Pricing</a></li>
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">Help</a></li>
+                <li><a href="#">Privacy</a></li>
+              </ul>
+            </div>
+            <!-- top right  -->
+            <div class="footer_top_right">
+              <h3 class="footer_title">Stay up to date</h3>
+              <form class="subcribe_form" action="#" method="post">
+                <input
+                  type="text"
+                  name="search_text"
+                  placeholder="Enter your email"
+                />
+                <button type="submit" class="btn btn-over-dark">
+                  Subscribe
+                </button>
+              </form>
+            </div>
+            <!-- --  -->
+          </div>
+          <!-- footer bottom area  -->
+          <div class="footer_bottom_area">
+            <p class="copyright_text">
+              © 2023 LC Limited. All rights reserved.
+            </p>
+            <ul>
+              <li><a href="#">Terms</a></li>
+              <li><a href="#">Privacy</a></li>
+              <li><a href="#">Cookies</a></li>
+            </ul>
+          </div>
+          <!-- --  -->
+        </div>
+      </div>
+    </footer>
+    <!-- ED:- Footer section  -->
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>
