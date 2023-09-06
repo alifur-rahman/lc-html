@@ -1034,6 +1034,33 @@ header {
   font-weight: 600;
   line-height: 20px;
 }
+
+.auth_box .plan-details {
+  justify-content: flex-start;
+}
+.auth_box .plan-details p {
+  color: #667085;
+  font-size: 14px;
+}
+.auth_box .plan .plan-content {
+  border: none;
+  padding: 0;
+}
+.auth_box .plan input[type="checkbox"]:checked + .plan-content,
+.auth_box .plan input[type="radio"]:checked + .plan-content {
+  border: none;
+  background: unset;
+}
+.auth_box .plan input[type="radio"]:checked + .plan-content .plan-details p,
+.auth_box .plan input[type="checkbox"]:checked + .plan-content .plan-details p {
+  color: #344054;
+}
+.auth_box .plan {
+  margin: 0 !important;
+}
+.auth_box .plan-content {
+  margin-top: 10px;
+}
 /* ------------------------------------------------------------------------------- */
 /* --- FOOTER CSS --- */
 /* ------------------------------------------------------------------------------- */
