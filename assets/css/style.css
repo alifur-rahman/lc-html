@@ -290,6 +290,54 @@ input[type="radio"] {
   .check_icon {
   display: block;
 }
+.plan.plan-button {
+  width: inherit;
+  display: block ruby;
+  margin: 12px 0 !important;
+}
+
+.plan-button-colors input[type="checkbox"]:checked + .plan-content,
+.plan-button-colors input[type="radio"]:checked + .plan-content {
+  background: #2e2e2e !important;
+}
+
+.plan-button-colors input[type="radio"]:checked + .plan-content .plan-details p,
+.plan-button-colors
+  input[type="checkbox"]:checked
+  + .plan-content
+  .plan-details
+  p {
+  color: #fff !important;
+}
+
+.plan-button-colors
+  input[type="radio"]:checked
+  + .plan-content
+  .plan-details
+  .plan-checked-icon,
+.plan-button-colors
+  input[type="checkbox"]:checked
+  + .plan-content
+  .plan-details
+  .plan-checked-icon {
+  border: 1px solid #fff;
+}
+
+.plan-button-colors
+  input[type="radio"]:checked
+  + .plan-content
+  .plan-details
+  .plan-checked-icon
+  .check_icon,
+.plan-button-colors
+  input[type="checkbox"]:checked
+  + .plan-content
+  .plan-details
+  .plan-checked-icon
+  .check_icon {
+  color: #fff;
+}
+
 /* ED global input css  */
 
 /* custom golbal css  */
@@ -671,6 +719,13 @@ header {
   margin-bottom: 9px;
   display: inline-block;
 }
+.project_side_bar.side_ber_style_2 label {
+  color: #404145;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 28px;
+}
 .project_side_bar select,
 .project_side_bar input {
   border-radius: 12px;
@@ -731,6 +786,14 @@ header {
 
 .required_skills .plan-details {
   justify-content: flex-start;
+}
+
+.side_ber_style_2 .plan-details p {
+  color: #6b6b6b;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
 }
 
 /* short filter css  */
@@ -1229,6 +1292,29 @@ header {
   align-content: center;
   align-items: center;
   gap: 16px;
+}
+
+/* ------------------------------------------------------------------------------- */
+/* --- PROJECT DETAILS CSS --- */
+/* ------------------------------------------------------------------------------- */
+.project_details_wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  align-items: flex-start;
+}
+.show_project_details {
+  flex: 0 0 66.66%;
+}
+.submited_date {
+  color: #6b6b6b;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+  border-radius: 50px;
+  background: #f4f4f4;
+  padding: 10px 20px;
 }
 
 /* ------------------------------------------------------------------------------- */
