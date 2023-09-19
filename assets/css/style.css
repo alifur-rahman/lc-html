@@ -318,6 +318,16 @@ input[type="radio"] {
   background: rgba(16, 24, 40, 0.05);
   color: #383838;
 }
+.btn-light {
+  border-radius: 8px;
+  border: 1px solid #000;
+  background: #fff;
+  color: #000;
+}
+.btn-light:hover {
+  color: #fff;
+  background-color: #000;
+}
 .btn-over-dark {
   border-radius: 0.8rem;
   border: 0.1rem solid #5a5a5a;
@@ -359,6 +369,7 @@ input[type="radio"] {
   margin: 0 auto;
   padding-top: 10px;
 }
+
 /* ------------------------------------------------------------------------------- */
 /* --- Custom Modal CSS --- */
 /* ------------------------------------------------------------------------------- */
@@ -1270,6 +1281,8 @@ header {
 }
 .show_project_details {
   flex: 0 0 66.66%;
+  width: 100%;
+  max-width: 680px;
 }
 .submited_date {
   color: #6b6b6b;
@@ -1281,7 +1294,60 @@ header {
   background: #f4f4f4;
   padding: 10px 20px;
 }
+.project_time {
+  color: #949297;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px;
+  margin-bottom: 10px;
+  display: inline-block;
+}
+.project_details_head h2 {
+  margin: 15px 0;
+}
+.head_btn {
+  margin-top: 20px;
+}
 
+.project_details_show {
+  padding: 35px 0;
+}
+.details_block {
+  margin-bottom: 30px;
+}
+
+.details_block:last-child {
+  margin-bottom: 0;
+}
+.block_title {
+  font-weight: 600;
+  color: #404145;
+  text-align: left;
+  margin-bottom: 10px;
+}
+.details_block ul {
+  list-style: disc;
+  margin-left: 25px;
+}
+.details_block ul li {
+  margin-bottom: 10px;
+}
+.details_block ul li a {
+  color: #000;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 28px;
+  text-decoration-line: underline;
+  transition: 0.3s;
+}
+.details_block ul li a:hover {
+  color: #646464;
+}
+.add_comment_btn {
+  padding: 14px 25px;
+}
 /* ------------------------------------------------------------------------------- */
 /* --- FOOTER CSS --- */
 /* ------------------------------------------------------------------------------- */
