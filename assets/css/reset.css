@@ -58,3 +58,12 @@ input,
 textarea {
   font-family: inherit;
 }
+/* Some Extra for pre style */
+.two_columns {
+  display: flex;
+  justify-content: space-between;
+}
+.two_columns div {
+  flex: 0 0 calc(50% - 15px);
+}
+/* Some Extra for pre style */
