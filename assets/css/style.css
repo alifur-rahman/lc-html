@@ -1474,18 +1474,23 @@ footer ul li a:hover {
   padding-bottom: 10px;
 }
 .dashboard_nav ul li {
-  padding-top: 20px;
+  padding-top: 10px;
 }
 .dashboard_nav ul li a {
   padding: 8px 15px;
   display: flex;
   align-items: center;
+  color: #344054;
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+}
+.dashboard_nav ul li a i {
+  font-size: 15px;
 }
 .dashboard_nav ul li a:hover,
 .dashboard_nav ul li a.active {
   background: #f2f4f7;
-}
-.dropdown_menu {
 }
 .submenu {
   padding: 15px 0;
@@ -1498,6 +1503,79 @@ footer ul li a:hover {
 }
 .dashboard_add_project {
   width: 100%;
+}
+/* dashboard_add_project */
+.dashboard_add_project {
+  background: #fff;
+  box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+.add_project_head {
+  border-bottom: 1px solid #eaecf0;
+  padding: 20px;
+}
+.add_project_head h3.title {
+  color: #101828;
+  font-size: 24px;
+  font-weight: 500;
+}
+.add_project_form {
+  padding: 20px;
+}
+.form_control:not(:last-child) {
+  padding-bottom: 20px;
+}
+.form_control label {
+  display: block;
+  color: #344054b2;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 20px;
+  padding-bottom: 6px;
+}
+.form_control input {
+  color: #101828;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+  width: 100%;
+  padding: 8px 15px;
+  border-radius: 8px;
+  border: 1px solid #d0d5dd;
+  background: #fff;
+  box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+}
+.form_control input::placeholder {
+  color: #667085;
+}
+.form_control textarea:hover,
+.form_control textarea:focus,
+.form_control input:hover,
+.form_control input:focus {
+  border-color: #101828;
+}
+.form_control label span {
+  color: red;
+}
+.form_control textarea {
+  resize: vertical;
+  color: #101828;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+  width: 100%;
+  padding: 8px 15px;
+  border-radius: 8px;
+  border: 1px solid #d0d5dd;
+  background: #fff;
+  box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+}
+.form_subtitle {
+  padding-bottom: 20px;
+  padding-top: 10px;
+  font-weight: 500;
+  font-size: 24px;
+  color: #101828;
 }
 /* Add Project Page */
 /* Maker Shihab */
