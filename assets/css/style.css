@@ -318,6 +318,16 @@ input[type="radio"] {
   background: rgba(16, 24, 40, 0.05);
   color: #383838;
 }
+.btn-light {
+  border-radius: 8px;
+  border: 1px solid #000;
+  background: #fff;
+  color: #000;
+}
+.btn-light:hover {
+  color: #fff;
+  background-color: #000;
+}
 .btn-over-dark {
   border-radius: 0.8rem;
   border: 0.1rem solid #5a5a5a;
@@ -359,6 +369,7 @@ input[type="radio"] {
   margin: 0 auto;
   padding-top: 10px;
 }
+
 /* ------------------------------------------------------------------------------- */
 /* --- Custom Modal CSS --- */
 /* ------------------------------------------------------------------------------- */
@@ -1270,6 +1281,8 @@ header {
 }
 .show_project_details {
   flex: 0 0 66.66%;
+  width: 100%;
+  max-width: 680px;
 }
 .submited_date {
   color: #6b6b6b;
@@ -1281,7 +1294,60 @@ header {
   background: #f4f4f4;
   padding: 10px 20px;
 }
+.project_time {
+  color: #949297;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px;
+  margin-bottom: 10px;
+  display: inline-block;
+}
+.project_details_head h2 {
+  margin: 15px 0;
+}
+.head_btn {
+  margin-top: 20px;
+}
 
+.project_details_show {
+  padding: 35px 0;
+}
+.details_block {
+  margin-bottom: 30px;
+}
+
+.details_block:last-child {
+  margin-bottom: 0;
+}
+.block_title {
+  font-weight: 600;
+  color: #404145;
+  text-align: left;
+  margin-bottom: 10px;
+}
+.details_block ul {
+  list-style: disc;
+  margin-left: 25px;
+}
+.details_block ul li {
+  margin-bottom: 10px;
+}
+.details_block ul li a {
+  color: #000;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 28px;
+  text-decoration-line: underline;
+  transition: 0.3s;
+}
+.details_block ul li a:hover {
+  color: #646464;
+}
+.add_comment_btn {
+  padding: 14px 25px;
+}
 /* ------------------------------------------------------------------------------- */
 /* --- FOOTER CSS --- */
 /* ------------------------------------------------------------------------------- */
@@ -1408,18 +1474,23 @@ footer ul li a:hover {
   padding-bottom: 10px;
 }
 .dashboard_nav ul li {
-  padding-top: 20px;
+  padding-top: 10px;
 }
 .dashboard_nav ul li a {
   padding: 8px 15px;
   display: flex;
   align-items: center;
+  color: #344054;
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+}
+.dashboard_nav ul li a i {
+  font-size: 15px;
 }
 .dashboard_nav ul li a:hover,
 .dashboard_nav ul li a.active {
   background: #f2f4f7;
-}
-.dropdown_menu {
 }
 .submenu {
   padding: 15px 0;
@@ -1432,6 +1503,79 @@ footer ul li a:hover {
 }
 .dashboard_add_project {
   width: 100%;
+}
+/* dashboard_add_project */
+.dashboard_add_project {
+  background: #fff;
+  box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+.add_project_head {
+  border-bottom: 1px solid #eaecf0;
+  padding: 20px;
+}
+.add_project_head h3.title {
+  color: #101828;
+  font-size: 24px;
+  font-weight: 500;
+}
+.add_project_form {
+  padding: 20px;
+}
+.form_control:not(:last-child) {
+  padding-bottom: 20px;
+}
+.form_control label {
+  display: block;
+  color: #344054b2;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 20px;
+  padding-bottom: 6px;
+}
+.form_control input {
+  color: #101828;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+  width: 100%;
+  padding: 8px 15px;
+  border-radius: 8px;
+  border: 1px solid #d0d5dd;
+  background: #fff;
+  box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+}
+.form_control input::placeholder {
+  color: #667085;
+}
+.form_control textarea:hover,
+.form_control textarea:focus,
+.form_control input:hover,
+.form_control input:focus {
+  border-color: #101828;
+}
+.form_control label span {
+  color: red;
+}
+.form_control textarea {
+  resize: vertical;
+  color: #101828;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+  width: 100%;
+  padding: 8px 15px;
+  border-radius: 8px;
+  border: 1px solid #d0d5dd;
+  background: #fff;
+  box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+}
+.form_subtitle {
+  padding-bottom: 20px;
+  padding-top: 10px;
+  font-weight: 500;
+  font-size: 24px;
+  color: #101828;
 }
 /* Add Project Page */
 /* Maker Shihab */
