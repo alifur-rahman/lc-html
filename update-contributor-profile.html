@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LC - Html Design || Sign Up as User</title>
+    <link rel="icon" type="image/x-icon" href="assets/img/fav.ico" />
+    <!-- Google Fonts  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans:wght@400;500;600&family=Sen&display=swap"
+      rel="stylesheet"
+    />
+    <!-- fontawesome cdn  -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <!-- --  -->
+    <link rel="stylesheet" href="assets/css/reset.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/responsive.css" />
+  </head>
+  <body>
+    <!-- ST:- Header section  -->
+    <header>
+      <div class="container">
+        <div class="header_wrapper">
+          <!-- logo area  -->
+          <div class="logo">
+            <a href="index.html"
+              ><img src="assets/img/logo.png" alt="logo"
+            /></a>
+          </div>
+          <!-- header search area  -->
+          <div class="header_search">
+            <form action="#" method="post">
+              <i class="fas fa-search"></i>
+              <input
+                type="text"
+                name="search-text"
+                placeholder="Project titles"
+              />
+              <div class="search_category">
+                <select name="se_category" id="">
+                  <option value="Explore">Explore</option>
+                  <option value="Explore">Explore</option>
+                  <option value="Explore">Explore</option>
+                </select>
+              </div>
+            </form>
+          </div>
+          <!-- header buttons & links area  -->
+          <div class="header_buttons">
+            <a href="dashboard.html" class="btn btn-dark">Dashboard</a>
+          </div>
+          <!-- --  -->
+        </div>
+      </div>
+    </header>
+
+    <!-- ED:- Header section  -->
+
+    <!-- ST:- sign up form  -->
+    <section class="full_widht_auth_section">
+      <div class="container">
+        <div class="dashboard">
+          <!-- Dashboard Menu -->
+          <div class="dashboard_menu">
+            <!-- Menu Profile -->
+            <div class="dashboard_menu_profile">
+              <div class="profile_img">
+                <img src="assets/img/user-1.png" alt="profile_img" />
+              </div>
+              <div class="profile_text">
+                <a href="#"> Annette Black </a>
+                <p>debra.holt@example.com</p>
+              </div>
+            </div>
+            <!-- Navigation -->
+            <div class="dashboard_nav">
+              <ul>
+                <li>
+                  <a href="#">
+                    <span> <i class="fas fa-bars"></i> </span>
+                    Dashboard
+                  </a>
+                </li>
+                <li class="dropdown_menu">
+                  <a href="#" class="active">
+                    <span><i class="fas fa-layer-group"></i></span>
+                    Projects
+                    <i class="fas fa-chevron-down"></i>
+                  </a>
+                  <ul class="submenu">
+                    <li>
+                      <a href="#">All Project</a>
+                    </li>
+                    <li>
+                      <a href="#">Add Project</a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#">
+                    <span><i class="fas fa-user-friends"></i></span>
+                    Profile
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span><i class="fas fa-lock"></i></span>
+                    Change Password
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span><i class="fas fa-sign-out-alt"></i></span>
+                    Logout
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- Add Project -->
+          <div class="dashboard_add_project">
+            <!-- Add Project head -->
+            <div class="add_project_head">
+              <h3 class="title">Add Project</h3>
+            </div>
+            <form action="#" class="add_project_form">
+              <div class="two_columns">
+                <!-- Single Input -->
+                <div class="form_control">
+                  <label for="#">
+                    What is the name of your project?<span>*</span>
+                  </label>
+                  <input
+                    type="text"
+                    name="text"
+                    id="text"
+                    placeholder="Project Name"
+                  />
+                </div>
+                <!-- Single Input -->
+                <div class="form_control">
+                  <label for="#"> What is your name?<span>*</span> </label>
+                  <input type="text" name="text" id="text" placeholder="Name" />
+                </div>
+              </div>
+              <div class="two_columns">
+                <!-- Single Input -->
+                <div class="form_control">
+                  <label for="#"> What is your email?<span>*</span> </label>
+                  <input
+                    type="email"
+                    name="text"
+                    id="text"
+                    placeholder="Email"
+                  />
+                </div>
+                <!-- Single Input -->
+                <div class="form_control">
+                  <label for="#">
+                    What is your affiliation?<span>*</span>
+                  </label>
+                  <input
+                    type="text"
+                    name="text"
+                    id="text"
+                    placeholder="Affiliation"
+                  />
+                </div>
+              </div>
+              <!-- Single Input -->
+              <div class="form_control">
+                <label for="#">
+                  Provide a brief description of your project.<span>*</span>
+                </label>
+                <textarea
+                  name="desc"
+                  id="desc"
+                  rows="2"
+                  placeholder="Description"
+                ></textarea>
+              </div>
+              <div class="two_columns">
+                <!-- Single Input -->
+                <div class="form_control">
+                  <label for="#">
+                    Provide up to (5) keywords engineers can use to find your
+                    project.<span>*</span>
+                  </label>
+                  <input
+                    type="text"
+                    name="text"
+                    id="text"
+                    placeholder="keywords"
+                  />
+                </div>
+                <!-- Single Input -->
+                <div class="form_control">
+                  <label for="#">
+                    Will this project require any onsite work?
+                  </label>
+                  <div class="onsite_check">
+                    <div class="radio_control">
+                      <label for="radioYes">Yes</label>
+                      <input type="radio" name="radio" id="radioYes" />
+                    </div>
+                    <div class="radio_control">
+                      <label for="radioNo">No</label>
+                      <input type="radio" name="radio" id="radioNo" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Form Sub Title Text -->
+              <p class="form_subtitle">
+                Please provide your affiliation's address.
+              </p>
+              <!-- Single Input -->
+              <div class="two_columns">
+                <div class="form_control">
+                  <label for="#"> Address </label>
+                  <input
+                    type="text"
+                    name="text"
+                    id="text"
+                    placeholder="65 Hansen Way"
+                  />
+                </div>
+                <!-- Single Input -->
+                <div class="form_control">
+                  <label for="#">Address Line 2 </label>
+                  <input
+                    type="text"
+                    name="text"
+                    id="text"
+                    placeholder="Apartment 4"
+                  />
+                </div>
+              </div>
+              <div class="two_columns">
+                <!-- Single Input -->
+                <div class="form_control">
+                  <label for="#">City / Town </label>
+                  <input
+                    type="text"
+                    name="text"
+                    id="text"
+                    placeholder="Palo Alto"
+                  />
+                </div>
+                <!-- Single Input -->
+                <div class="form_control">
+                  <label for="#">State / Region / Province </label>
+                  <input
+                    type="text"
+                    name="text"
+                    id="text"
+                    placeholder="California"
+                  />
+                </div>
+              </div>
+              <div class="two_columns">
+                <!-- Single Input -->
+                <div class="form_control">
+                  <label for="#">Zip / Post Code </label>
+                  <input
+                    type="number"
+                    name="text"
+                    id="text"
+                    placeholder="94304"
+                  />
+                </div>
+                <!-- Single Input -->
+                <div class="form_control">
+                  <label for="#">Country </label>
+                  <input
+                    type="text"
+                    name="text"
+                    id="text"
+                    placeholder="United States"
+                  />
+                </div>
+              </div>
+              <div class="two_columns">
+                <!-- Single Input -->
+                <div class="form_control">
+                  <label for="#">
+                    Is this an individual or team project?
+                    <span>*</span>
+                  </label>
+                  <div class="onsite_check">
+                    <div class="radio_control">
+                      <label for="radioIndividual">Individual</label>
+                      <input type="radio" name="radio" id="radioIndividual" />
+                    </div>
+                    <div class="radio_control">
+                      <label for="radioTeam">Team</label>
+                      <input type="radio" name="radio" id="radioTeam" />
+                    </div>
+                    <div class="radio_control">
+                      <label for="radioOther">Other</label>
+                      <input type="radio" name="radio" id="radioOther" />
+                    </div>
+                  </div>
+                </div>
+                <!-- Single Input -->
+                <div class="form_control">
+                  <label for="#"> Describe the nature of your project. </label>
+                  <div class="onsite_check">
+                    <div class="radio_control">
+                      <label for="radioProg">General Programming</label>
+                      <input type="radio" name="radio" id="radioProg" />
+                    </div>
+                    <div class="radio_control">
+                      <label for="radioData">Data Analysis</label>
+                      <input type="radio" name="radio" id="radioData" />
+                    </div>
+                    <div class="radio_control">
+                      <label for="radioLab">Wet Lab</label>
+                      <input type="radio" name="radio" id="radioLab" />
+                    </div>
+                    <div class="radio_control">
+                      <label for="radioEOther">Other</label>
+                      <input type="radio" name="radio" id="radioEOther" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Single Input -->
+              <div class="form_control">
+                <label for="#">
+                  Is there a hard deadline for this project ? <span>*</span>
+                </label>
+                <div class="onsite_check">
+                  <div class="radio_control">
+                    <label for="radioYes">Yes</label>
+                    <input type="radio" name="radio" id="radioYes" />
+                  </div>
+                  <div class="radio_control">
+                    <label for="radioNo">No</label>
+                    <input type="radio" name="radio" id="radioNo" />
+                  </div>
+                </div>
+              </div>
+              <!-- Single Input -->
+              <div class="form_control">
+                <label for="#"> What is your project deadline? </label>
+                <div class="date_picker">
+                  <input type="text" />
+                  <button>Data Picker</button>
+                </div>
+              </div>
+              <!-- Single Input -->
+              <div class="form_control">
+                <label for="#">
+                  How long do you expect this project to take ?
+                </label>
+                <div class="onsite_check">
+                  <div class="radio_control">
+                    <label for="radioYes">Less than 1 week</label>
+                    <input type="radio" name="radio" id="radioYes" />
+                  </div>
+                  <div class="radio_control">
+                    <label for="radioNo">Less than 1 month</label>
+                    <input type="radio" name="radio" id="radioNo" />
+                  </div>
+                  <div class="radio_control">
+                    <label for="radioNo">Less than 3 months</label>
+                    <input type="radio" name="radio" id="radioNo" />
+                  </div>
+                  <div class="radio_control">
+                    <label for="radioNo">Greater than 3 months</label>
+                    <input type="radio" name="radio" id="radioNo" />
+                  </div>
+                  <div class="radio_control">
+                    <label for="radioNo">Other</label>
+                    <input type="radio" name="radio" id="radioNo" />
+                  </div>
+                </div>
+              </div>
+              <!-- Single Input -->
+              <div class="form_control">
+                <label for="#">
+                  Do you have a budget for this project or will it rely on
+                  volunteer work / platform sponsorship?<span>*</span>
+                </label>
+                <div class="onsite_check">
+                  <div class="radio_control">
+                    <label for="radioYes">I have a budget</label>
+                    <input type="radio" name="radio" id="radioYes" />
+                  </div>
+                  <div class="radio_control">
+                    <label for="radioNo">
+                      I will require a volunteer / sponsorship
+                    </label>
+                    <input type="radio" name="radio" id="radioNo" />
+                  </div>
+                </div>
+              </div>
+              <!-- Single Input -->
+              <div class="form_control">
+                <label for="#"
+                  >What is your budget or the expected cost of this project ?
+                </label>
+                <textarea
+                  name="answer"
+                  id="answer"
+                  rows="2"
+                  placeholder="Answer here.."
+                >
+                </textarea>
+              </div>
+              <!-- Single Input -->
+              <div class="form_control">
+                <label for="#">
+                  What will you be ready to start this project?
+                </label>
+                <div class="onsite_check">
+                  <div class="radio_control">
+                    <label for="radioYes">Immediately</label>
+                    <input type="radio" name="radio" id="radioYes" />
+                  </div>
+                  <div class="radio_control">
+                    <label for="radioNo"> Within 1 week </label>
+                    <input type="radio" name="radio" id="radioNo" />
+                  </div>
+                  <div class="radio_control">
+                    <label for="radioNo">Other</label>
+                    <input type="radio" name="radio" id="radioNo" />
+                  </div>
+                </div>
+              </div>
+              <!-- Single Input -->
+              <div class="form_control">
+                <label for="#">
+                  Please describe the final deliverable in as much detail as
+                  possible.
+                </label>
+                <textarea
+                  name="answer"
+                  id="answer"
+                  rows="2"
+                  placeholder="Answer here.."
+                >
+                </textarea>
+              </div>
+              <!-- Single Input -->
+              <div class="form_control">
+                <label for="#"> Provide a link to any relevant data. </label>
+                <input name="answer" id="answer" placeholder="https://" />
+              </div>
+              <!-- Single Input -->
+              <div class="form_control">
+                <label for="#">
+                  Provide links to any relevant literature that may help your
+                  project match.
+                </label>
+                <textarea
+                  name="answer"
+                  id="answer"
+                  rows="2"
+                  placeholder="Answer here.."
+                >
+                </textarea>
+              </div>
+              <!-- Single Input -->
+              <div class="form_control">
+                <label for="#">
+                  Anything else that should be included with your project’s
+                  description?
+                </label>
+                <textarea
+                  name="answer"
+                  id="answer"
+                  rows="2"
+                  placeholder="Answer here.."
+                >
+                </textarea>
+              </div>
+              <div class="form_submit">
+                <button type="submit" class="btn btn-submit btn-dark">
+                  Submit
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ED:- sign up form  -->
+
+    <!-- ST:- Footer section  -->
+    <footer>
+      <div class="container">
+        <div class="footer_wrapper">
+          <!-- footer top area  -->
+          <div class="footer_top_area">
+            <!-- top left  -->
+            <div class="footer_top_left">
+              <!-- logo  -->
+              <a href="index.html">
+                <img src="assets/img/logo-dark.png" alt="dark logo"
+              /></a>
+              <!-- footer menus  -->
+              <ul>
+                <li><a href="#">Overview</a></li>
+                <li><a href="#">Features</a></li>
+                <li><a href="#">Pricing</a></li>
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">Help</a></li>
+                <li><a href="#">Privacy</a></li>
+              </ul>
+            </div>
+            <!-- top right  -->
+            <div class="footer_top_right">
+              <h3 class="footer_title">Stay up to date</h3>
+              <form class="subcribe_form" action="#" method="post">
+                <input
+                  type="text"
+                  name="search_text"
+                  placeholder="Enter your email"
+                />
+                <button type="submit" class="btn btn-over-dark">
+                  Subscribe
+                </button>
+              </form>
+            </div>
+            <!-- --  -->
+          </div>
+          <!-- footer bottom area  -->
+          <div class="footer_bottom_area">
+            <p class="copyright_text">
+              © 2023 LC Limited. All rights reserved.
+            </p>
+            <ul>
+              <li><a href="#">Terms</a></li>
+              <li><a href="#">Privacy</a></li>
+              <li><a href="#">Cookies</a></li>
+            </ul>
+          </div>
+          <!-- --  -->
+        </div>
+      </div>
+    </footer>
+    <!-- ED:- Footer section  -->
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>
