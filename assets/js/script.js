@@ -103,6 +103,48 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 
+// rating js 
+document.addEventListener('DOMContentLoaded', function () {
+    const stars = document.querySelectorAll(".star");
+    // const userRating = document.getElementById("user-rating");
+
+    let selectedRating = 0;
+
+    stars.forEach((star) => {
+    star.addEventListener("mouseenter", () => {
+        const rating = parseInt(star.getAttribute("data-rating"));
+        if (selectedRating === 0) {
+        // userRating.textContent = rating;
+        updateStars(rating);
+        }
+    });
+
+    star.addEventListener("mouseleave", () => {
+        if (selectedRating === 0) {
+        // userRating.textContent = "0";
+        updateStars(0);
+        }
+    });
+
+    star.addEventListener("click", () => {
+        selectedRating = parseInt(star.getAttribute("data-rating"));
+        // userRating.textContent = selectedRating;
+        updateStars(selectedRating);
+    });
+    });
+
+    function updateStars(hoverRating) {
+    stars.forEach((star) => {
+        const rating = parseInt(star.getAttribute("data-rating"));
+        if (hoverRating >= rating) {
+        star.classList.add("checked");
+        } else {
+        star.classList.remove("checked");
+        }
+    });
+    }
+});
+
 
 
 // JAVASCRIPT FOR CUSTOM SELECT OPTION 
