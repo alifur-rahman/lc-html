@@ -70,6 +70,80 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 
+// accrodion js 
+
+document.addEventListener('DOMContentLoaded', function () {
+    // Get all accordion items
+    const accordionItems = document.querySelectorAll('.accordion-item');
+
+    // Add a click event listener to each accordion item
+    accordionItems.forEach(item => {
+        const header = item.querySelector('.accordion-header');
+        const content = item.querySelector('.accordion-content');
+
+        // Toggle the content when the header is clicked
+        header.addEventListener('click', () => {
+            // Close all accordion items
+            accordionItems.forEach(otherItem => {
+                if (otherItem !== item) {
+                    otherItem.querySelector('.accordion-content').classList.remove('active');
+                    const otherIcon = otherItem.querySelector('.toggle-icon');
+                    otherIcon.textContent = '+';
+                }
+            });
+
+            // Toggle the content of the clicked item
+            content.classList.toggle('active');
+            const icon = header.querySelector('.toggle-icon');
+            icon.textContent = content.classList.contains('active') ? '-' : '+';
+        });
+    });
+
+
+});
+
+
+// rating js 
+document.addEventListener('DOMContentLoaded', function () {
+    const stars = document.querySelectorAll(".star");
+    // const userRating = document.getElementById("user-rating");
+
+    let selectedRating = 0;
+
+    stars.forEach((star) => {
+    star.addEventListener("mouseenter", () => {
+        const rating = parseInt(star.getAttribute("data-rating"));
+        if (selectedRating === 0) {
+        // userRating.textContent = rating;
+        updateStars(rating);
+        }
+    });
+
+    star.addEventListener("mouseleave", () => {
+        if (selectedRating === 0) {
+        // userRating.textContent = "0";
+        updateStars(0);
+        }
+    });
+
+    star.addEventListener("click", () => {
+        selectedRating = parseInt(star.getAttribute("data-rating"));
+        // userRating.textContent = selectedRating;
+        updateStars(selectedRating);
+    });
+    });
+
+    function updateStars(hoverRating) {
+    stars.forEach((star) => {
+        const rating = parseInt(star.getAttribute("data-rating"));
+        if (hoverRating >= rating) {
+        star.classList.add("checked");
+        } else {
+        star.classList.remove("checked");
+        }
+    });
+    }
+});
 
 
 
