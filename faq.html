@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LC - Html Design || FAQ's</title>
+    <link rel="icon" type="image/x-icon" href="assets/img/fav.ico" />
+    <!-- Google Fonts  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans:wght@400;500;600&family=Sen&display=swap"
+      rel="stylesheet"
+    />
+    <!-- fontawesome cdn  -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <!-- --  -->
+    <link rel="stylesheet" href="assets/css/reset.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/responsive.css" />
+  </head>
+  <body>
+    <!-- ST:- Header section  -->
+    <header>
+      <div class="container">
+        <div class="header_wrapper">
+          <!-- logo area  -->
+          <div class="logo">
+            <a href="index.html"
+              ><img src="assets/img/logo.png" alt="logo"
+            /></a>
+          </div>
+          <!-- header search area  -->
+          <div class="header_search">
+            <form action="#" method="post">
+              <i class="fas fa-search"></i>
+              <input
+                type="text"
+                name="search-text"
+                placeholder="Project titles"
+              />
+
+              <div class="search_category custom-select">
+                <select name="se_category" id="">
+                  <option value="Explore">Explore</option>
+                  <option value="Explore">Explore 2</option>
+                  <option value="Explore">Explore 3</option>
+                </select>
+              </div>
+            </form>
+          </div>
+          <!-- header buttons & links area  -->
+          <div class="header_buttons">
+            <a href="login.html" class="btn btn-dark">Login</a>
+            <div class="custom-dropdown">
+              <button class="dropdown-button" data-modal-id="signup_references">
+                <i class="fas fa-user-alt"></i>
+                <i class="fas fa-chevron-down"></i>
+              </button>
+            </div>
+          </div>
+          <!-- --  -->
+        </div>
+      </div>
+    </header>
+    <!-- Choose Your Preferences modal  -->
+    <div class="custom-modal" id="signup_references">
+      <div class="modal-wrapper toggle_top">
+        <!-- modal head  -->
+        <div class="modal_head">
+          <img src="assets/img/logo.png" alt="logo" />
+          <button class="modal_close_button">
+            <i class="fas fa-times"></i>
+          </button>
+        </div>
+        <!-- modal body  -->
+        <div class="modal_body">
+          <h2 class="modal_title">Choose Your Preferences.</h2>
+          <form class="sign_up_preference" action="#" method="post">
+            <div class="custom_radio">
+              <label class="custom-radio">
+                <input
+                  type="radio"
+                  value="sign-up-researcher.html"
+                  checked
+                  name="radio-option"
+                />
+                <span class="radio-control">
+                  <span></span>
+                </span>
+                Researcher sign- up
+              </label>
+            </div>
+
+            <div class="custom_radio">
+              <label class="custom-radio">
+                <input
+                  type="radio"
+                  value="sign-up-contributor.html"
+                  name="radio-option"
+                />
+                <span class="radio-control">
+                  <span></span>
+                </span>
+                Contributor sign- up
+              </label>
+            </div>
+
+            <div class="custom_radio">
+              <label class="custom-radio">
+                <input
+                  type="radio"
+                  value="sign-up-user.html"
+                  name="radio-option"
+                />
+                <span class="radio-control">
+                  <span></span>
+                </span>
+                User sign- up
+              </label>
+            </div>
+            <button type="submit" class="btn btn-dark btn-full">
+              Create Account
+            </button>
+          </form>
+        </div>
+        <!-- modal footer  -->
+        <div class="modal_footer">
+          <div class="have_account">
+            <p>Already have an account? <a href="login.html">Log in</a></p>
+          </div>
+        </div>
+        <!-- --  -->
+      </div>
+    </div>
+    <!-- ED:- Header section  -->
+
+    <!-- ST:- faq's question section -->
+    <section class="full_width_faq_area">
+      <div class="container">
+        <div class="faq_wrapper">
+          <!-- faq head  -->
+          <div class="faq_head">
+            <h2>Frequently asked questions</h2>
+            <p>Everything you need to know about the product and billing.</p>
+          </div>
+          <!-- faq questions  -->
+          <div class="faq_questions">
+            <div class="accordion">
+              <div class="accordion-item">
+                <div class="accordion-header">
+                  <h3>Is there a free trial available?</h3>
+                  <span class="toggle-icon accordion-icon-design">+</span>
+                </div>
+                <div class="accordion-content">
+                  <p>
+                    Yes, you can try us for free for 30 days. If you want, we’ll
+                    provide you with a free, personalized 30-minute onboarding
+                    call to get you up and running as soon as possible.
+                  </p>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <div class="accordion-header">
+                  <h3>Can I change my plan later?</h3>
+                  <span class="toggle-icon accordion-icon-design">+</span>
+                </div>
+                <div class="accordion-content">
+                  <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Commodi iste doloribus ducimus architecto deserunt
+                    reprehenderit
+                  </p>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <div class="accordion-header">
+                  <h3>What is your cancellation policy?</h3>
+                  <span class="toggle-icon accordion-icon-design">+</span>
+                </div>
+                <div class="accordion-content">
+                  <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Commodi iste doloribus ducimus architecto deserunt
+                    reprehenderit
+                  </p>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <div class="accordion-header">
+                  <h3>Can other info be added to an invoice?</h3>
+                  <span class="toggle-icon accordion-icon-design">+</span>
+                </div>
+                <div class="accordion-content">
+                  <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Commodi iste doloribus ducimus architecto deserunt
+                    reprehenderit
+                  </p>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <div class="accordion-header">
+                  <h3>How does billing work?</h3>
+                  <span class="toggle-icon accordion-icon-design">+</span>
+                </div>
+                <div class="accordion-content">
+                  <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Commodi iste doloribus ducimus architecto deserunt
+                    reprehenderit
+                  </p>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <div class="accordion-header">
+                  <h3>How do I change my account email?</h3>
+                  <span class="toggle-icon accordion-icon-design">+</span>
+                </div>
+                <div class="accordion-content">
+                  <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Commodi iste doloribus ducimus architecto deserunt
+                    reprehenderit
+                  </p>
+                </div>
+              </div>
+
+              <!-- Add more FAQ items as needed -->
+            </div>
+          </div>
+          <!-- --  -->
+        </div>
+      </div>
+    </section>
+    <!-- ED:- faq's question section -->
+
+    <!-- ST:- have_question_contact -->
+    <section class="full_width_have_question_contact">
+      <div class="container">
+        <div class="have_question_wrapper">
+          <div class="user_image_box">
+            <img src="assets/img/user-1.png" alt="" />
+            <img class="middle-img" src="assets/img/user-2.png" alt="" />
+            <img src="assets/img/user-3.png" alt="" />
+          </div>
+          <div class="have_question_content">
+            <h5>Still have questions?</h5>
+            <p>
+              Can’t find the answer you’re looking for? Please chat to our
+              friendly team.
+            </p>
+          </div>
+          <a href="#" class="btn btn-dark get_touch_btn">Get in touch</a>
+        </div>
+      </div>
+    </section>
+    <!-- ED:-  have_question_contact -->
+    <!-- ST:- Footer section  -->
+    <footer>
+      <div class="container">
+        <div class="footer_wrapper">
+          <!-- footer top area  -->
+          <div class="footer_top_area">
+            <!-- top left  -->
+            <div class="footer_top_left">
+              <!-- logo  -->
+              <a href="index.html">
+                <img src="assets/img/logo-dark.png" alt="dark logo"
+              /></a>
+              <!-- footer menus  -->
+              <ul>
+                <li><a href="#">Overview</a></li>
+                <li><a href="#">Features</a></li>
+                <li><a href="#">Pricing</a></li>
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">Help</a></li>
+                <li><a href="#">Privacy</a></li>
+              </ul>
+            </div>
+            <!-- top right  -->
+            <div class="footer_top_right">
+              <h3 class="footer_title">Stay up to date</h3>
+              <form class="subcribe_form" action="#" method="post">
+                <input
+                  type="text"
+                  name="search_text"
+                  placeholder="Enter your email"
+                />
+                <button type="submit" class="btn btn-over-dark">
+                  Subscribe
+                </button>
+              </form>
+            </div>
+            <!-- --  -->
+          </div>
+          <!-- footer bottom area  -->
+          <div class="footer_bottom_area">
+            <p class="copyright_text">
+              © 2023 LC Limited. All rights reserved.
+            </p>
+            <ul>
+              <li><a href="#">Terms</a></li>
+              <li><a href="#">Privacy</a></li>
+              <li><a href="#">Cookies</a></li>
+            </ul>
+          </div>
+          <!-- --  -->
+        </div>
+      </div>
+    </footer>
+    <!-- ED:- Footer section  -->
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>
