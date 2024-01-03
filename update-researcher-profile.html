@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LC - Html Design || Sign Up as User</title>
+    <link rel="icon" type="image/x-icon" href="assets/img/fav.ico" />
+    <!-- Google Fonts  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans:wght@400;500;600&family=Sen&display=swap"
+      rel="stylesheet"
+    />
+    <!-- fontawesome cdn  -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <!-- --  -->
+    <link rel="stylesheet" href="assets/css/reset.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/responsive.css" />
+  </head>
+  <body>
+    <!-- ST:- Header section  -->
+    <header>
+      <div class="container">
+        <div class="header_wrapper">
+          <!-- logo area  -->
+          <div class="logo">
+            <a href="index.html"
+              ><img src="assets/img/logo.png" alt="logo"
+            /></a>
+          </div>
+          <!-- header search area  -->
+          <div class="header_search">
+            <form action="#" method="post">
+              <i class="fas fa-search"></i>
+              <input
+                type="text"
+                name="search-text"
+                placeholder="Project titles"
+              />
+              <div class="search_category">
+                <select name="se_category" id="">
+                  <option value="Explore">Explore</option>
+                  <option value="Explore">Explore</option>
+                  <option value="Explore">Explore</option>
+                </select>
+              </div>
+            </form>
+          </div>
+          <!-- header buttons & links area  -->
+          <div class="header_buttons">
+            <a href="dashboard.html" class="btn btn-dark">Dashboard</a>
+          </div>
+          <!-- --  -->
+        </div>
+      </div>
+    </header>
+
+    <!-- ED:- Header section  -->
+
+    <!-- ST:- sign up form  -->
+    <section class="full_widht_auth_section">
+      <div class="container">
+        <div class="dashboard">
+          <!-- Dashboard Menu -->
+          <div class="dashboard_menu">
+            <!-- Menu Profile -->
+            <div class="dashboard_menu_profile">
+              <div class="profile_img">
+                <img src="assets/img/user-1.png" alt="profile_img" />
+              </div>
+              <div class="profile_text">
+                <a href="#"> Annette Black </a>
+                <p>debra.holt@example.com</p>
+              </div>
+            </div>
+            <!-- Navigation -->
+            <div class="dashboard_nav">
+              <ul>
+                <li>
+                  <a href="#">
+                    <span> <i class="fas fa-bars"></i> </span>
+                    Dashboard
+                  </a>
+                </li>
+                <li class="dropdown_menu">
+                  <a href="#" class="active">
+                    <span><i class="fas fa-layer-group"></i></span>
+                    Projects
+                    <i class="fas fa-chevron-down"></i>
+                  </a>
+                  <ul class="submenu">
+                    <li>
+                      <a href="#">All Project</a>
+                    </li>
+                    <li>
+                      <a href="#">Add Project</a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#">
+                    <span><i class="fas fa-user-friends"></i></span>
+                    Profile
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span><i class="fas fa-lock"></i></span>
+                    Change Password
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span><i class="fas fa-sign-out-alt"></i></span>
+                    Logout
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- Add Project -->
+          <div class="dashboard_add_project">
+            <!-- Add Project head -->
+            <div class="add_project_head">
+              <h3 class="title">Update Profile</h3>
+            </div>
+            <form action="#" class="update_form">
+              <!-- form control -->
+              <div class="update_form_control">
+                <label for="#">Full Name</label>
+                <div class="update_form_inputs">
+                  <!-- Single input -->
+                  <div class="update_form_single">
+                    <input type="text" placeholder="Annette" />
+                  </div>
+                  <!-- Single input -->
+                  <div class="update_form_single">
+                    <input type="text" placeholder="Annette" />
+                  </div>
+                </div>
+              </div>
+              <!-- form control -->
+              <div class="update_form_control">
+                <label for="#">Full Name</label>
+                <div class="update_form_inputs">
+                  <!-- Single input -->
+                  <div class="update_form_single">
+                    <input type="text" placeholder="Annette" />
+                  </div>
+                </div>
+              </div>
+              <!-- Form Submit -->
+              <div class="update_form_submit">
+                <button type="submit" class="btn btn_primary">Save</button>
+                <button type="submit" class="btn btn_outline">Cancel</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ED:- sign up form  -->
+
+    <!-- ST:- Footer section  -->
+    <footer>
+      <div class="container">
+        <div class="footer_wrapper">
+          <!-- footer top area  -->
+          <div class="footer_top_area">
+            <!-- top left  -->
+            <div class="footer_top_left">
+              <!-- logo  -->
+              <a href="index.html">
+                <img src="assets/img/logo-dark.png" alt="dark logo"
+              /></a>
+              <!-- footer menus  -->
+              <ul>
+                <li><a href="#">Overview</a></li>
+                <li><a href="#">Features</a></li>
+                <li><a href="#">Pricing</a></li>
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">Help</a></li>
+                <li><a href="#">Privacy</a></li>
+              </ul>
+            </div>
+            <!-- top right  -->
+            <div class="footer_top_right">
+              <h3 class="footer_title">Stay up to date</h3>
+              <form class="subcribe_form" action="#" method="post">
+                <input
+                  type="text"
+                  name="search_text"
+                  placeholder="Enter your email"
+                />
+                <button type="submit" class="btn btn-over-dark">
+                  Subscribe
+                </button>
+              </form>
+            </div>
+            <!-- --  -->
+          </div>
+          <!-- footer bottom area  -->
+          <div class="footer_bottom_area">
+            <p class="copyright_text">
+              © 2023 LC Limited. All rights reserved.
+            </p>
+            <ul>
+              <li><a href="#">Terms</a></li>
+              <li><a href="#">Privacy</a></li>
+              <li><a href="#">Cookies</a></li>
+            </ul>
+          </div>
+          <!-- --  -->
+        </div>
+      </div>
+    </footer>
+    <!-- ED:- Footer section  -->
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>
